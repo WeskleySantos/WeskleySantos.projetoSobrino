@@ -27,6 +27,7 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
 }
 /*----------Titulos----------------*/
 .titulos {

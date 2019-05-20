@@ -1,29 +1,33 @@
-.box-centro {
+.centro {
 	display: flex;
-
-	text-align: center;
-	justify-content: space-around;
-	align-items: center;
-}
-.texto {
-	display: flex;
+	flex-wrap: nowrap;
 	flex-direction: row;
-	flex-wrap: wrap;
+	justify-content: center;
 	width: 100%;
+	height: 350px;
+}
+div.tamanho {
+	display: flex;
+	margin: auto;
+	background-color: black;	
 }
 .sobre {
-	display: flex;
+	font-family: ;
+	font-size: 20px;
+	color: black;
+	width: 60%;
+	height: 350px;
 	text-align: justify;
+	word-wrap: break-word;
 }
 .imagem{
-	width: 300px;
-    height: 350px;
-    	background-color: black;
-    	border: 10px solid white;
-
+    background-color: black;
+    margin-right: 20px;
+    border: 10px solid #4F0045;
+    width: 300px;
+	height: 350px;
 }
 .imagem img {
-
 	width: 100%;
     height: 100%;
     object-fit: cover;
