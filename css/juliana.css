@@ -1,0 +1,13 @@
+.box-centro {
+	display: flex;
+
+	text-align: center;
+	justify-content: space-around;
+	align-items: center;
+}
+.texto {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
