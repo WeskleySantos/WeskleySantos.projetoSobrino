@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-	<title>Projeto Orientado</title>
+	<title>Projeto Orientado | Email</title>
 		<meta charset="utf-8">
+		<!--Icone-->
+		<link rel="icon" href="imagens/icon.ico">
 		<!--CSS-->
 		<link rel="stylesheet" href="css/novo.css">
 		<link rel="stylesheet" href="css/contato.css">
 		<!--Link dos Icones-->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
 	<div class="container">
@@ -59,30 +62,68 @@
 				</div>
 			<!--Conteudo do Site-->
 				<div class="centro">
-					<form>
+					<div class="formulario">
+					<form id="document">				
+						
+							<label>
+								<span>Nome</span><input class="hvr-underline-reveal" required type="text" name="churrasco" id=
+								"churrasco"size="35" placeholder="Nome">
+							</label>
+						
+							<label>
+								<span>Email</span><input type="email" class="left" id="field" name="field" size="20" maxlenght="10" placeholder="E-mail">
+							</label>
+						
+						<label for="review">Seu comentário</label> <small class="caracteres"></small>
 
-					
-						<input class="input2" type="text" name="name">
+						<textarea require name="comentario" id="comentario" cols="30" rows="10" placeholder="Digite sua Mensagem"></textarea>
 
-					
 
-						<input class="input2" type="text" name="email">
-
-					
-
-					
-						<textarea class="input2" name="message">asdad</textarea>
-
-					
-
-				
-							<button class="contact2-form-btn">
+							<button class="hvr-underline-from-left">
 								Enviar
-							</button>
-					
+							</butto>
 				</form>
 				</div>
+				</div>
 		</div> <!--Menu Esquerda-->
+
+ 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+			<script>
+$(document).on("input", "#comentario", function() {
+        var limite = 145;
+        var informativo = "caracteres restantes.";
+        var caracteresDigitados = $(this).val().length;
+        var caracteresRestantes = limite - caracteresDigitados;
+
+        if (caracteresRestantes <= 0) {
+            var comentario = $("textarea[name=comentario]").val();
+            $("textarea[name=comentario]").val(comentario.substr(0, limite));
+            $(".caracteres").text("0 " + informativo);
+        } else {
+            $(".caracteres").text(caracteresRestantes + " " + informativo);
+        }
+    });
+	</script>
+
+	<script>
+// just for the demos, avoids form submit
+jQuery.validator.setDefaults({
+  debug: true,
+  success: "valid"
+});
+$( "#myform" ).validate({
+  rules: {
+    field: {
+      required: true,
+      email: true
+    }
+  }
+});
+</script>
 	</div> <!--Container-->
+
 </body>
 </html>
