@@ -1,0 +1,24 @@
+form * {
+  color: black;
+}
+/*---------------------------------------------*/
+input {
+	
+	border: none;
+}
+
+textarea {
+  
+  border: none;
+}
+
+/*---------------------------------------------*/
+button {
+	
+	border: none;
+	background: orange;
+}
+
+button:hover {
+	cursor: pointer;
+}
