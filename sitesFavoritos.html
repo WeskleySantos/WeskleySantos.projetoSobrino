@@ -6,8 +6,8 @@
 		<link rel="stylesheet" href="css/novo.css">
 		<link rel="stylesheet" href="css/tabela.css">
 		<!--Link dos Icones-->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 	<div class="container">
@@ -15,7 +15,7 @@
 		<div>
 			<nav class="menu">
 				<ul class="lista-principal">
-					<li class="selecionado"><a href="index.html" ><i class="fas fa-bed selecionado"></i></a>
+					<li class=""><a href="index.html" ><i class="fas fa-bed "></i></a>
 						<ul>
 							<li><a href="index.html">Home</a></li>
 						</ul>
@@ -34,10 +34,16 @@
 						</ul>
 					</li>
 
-					<li><a href="sitesFavoritos.html" class="verde"><i class="fas fa-carrot"></i></a>
+					<li><a href="sitesFavoritos.html" class="verde selecionado"><i class="fas fa-carrot"></i></a>
 
 						<ul>
 							<li><a href="">Sites Favoritos</a></li>
+						</ul>
+					</li>
+					<li><a href="email.html" class="verde"><i class="material-icons">email</i></a>
+
+						<ul>
+							<li><a href="">Contato</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -47,26 +53,29 @@
 			<!-- Projeto Orientado -->
 				<div class="titulos">
 					<h1 class="titulos">Projeto Orientado</h1>
-					<h2>Tabela de Curiosidades</h2>
+					<h2>Lista de sites Favoritos</h2>
 				</div>
 
 			<!--Conteudo do Site-->
-			<div class="sites-fav">
-				<h2>Lista de sites Favoritos</h2>
+			<div class="preto lado">
+				
+				<div class="curiosidades">
 					<h3>Juliana Monteiro</h3>
 					
 					<ul>
-						<li><a href="">Facebook</a></li>
-						<li><a href="">Devmedia</a></li>
+						<li><a class="preto" href="">Facebook</a></li>
+						<li><a class="preto" href="">Devmedia</a></li>
 					</ul>
-					
+				</div>
+				<div class="curiosidades">
 						<h3>Weskley Santos</h3>
 					
-					<ul>
-						<li><a href="">Twitter</a></li>
-						<li><a href="">W3C</a></li>
+					<ul class="preto">
+						<li><a class="preto" href="">Twitter</a></li>
+						<li><a class="preto" href="">W3C</a></li>
 					</ul>
-		</div>
+				</div>
+			</div>
 	</div>
 </div>
 
