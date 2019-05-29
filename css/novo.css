@@ -1,8 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap');
 body {
-  background: #fff;
   color: #4F0045;
+
+}
+.fundo {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding-left: 80px;
+            background-image: url(../imagens/logo.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 30%;
+      
+        background-clip: content-box;
+        filter: blur(15px);
+        z-index: -20;
 }
 body,
 *{
@@ -18,7 +32,8 @@ h2 {
     width: 100vw;
     height: 100vh;
     display: flex;
-    z-index: -10;
+    z-index: 1;
+
 }
 /*---------Conteudo lateral--------*/
 .conteudo-esquerda {
@@ -151,7 +166,7 @@ h1.titulos::after {
     right: 10px;
     background: #fff;
     transition: 0.5s;
-    z-index: 1;
+    z-index: 10;
 }
 
 .cartao:hover .imgBx {
