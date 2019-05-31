@@ -13,7 +13,7 @@ h2 {
 	height: 350px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	text-align: center;
 }
 .curiosidades {
