@@ -4,12 +4,11 @@
 	flex-direction: row;
 	justify-content: space-evenly;
 	width: 100%;
-	height: 350px;
 }
 div.tamanho {
 	display: flex;
 	margin: auto;
-	background-color: black;	
+	background-color: black;
 }
 .sobre {
 	font-size: 17px;
@@ -21,15 +20,15 @@ div.tamanho {
 	line-height: 1.5;
 }
 .imagem{
-    background-color: black;
-    border: 10px solid #4F0045;
-    width: 280px;
-	height: 330px;
+  background-color: black;
+  border: 10px solid #4F0045;
+  width: 280px;
+	height: 425px;
 }
 .imagem img {
 	width: 100%;
-    height: 100%;
-    object-fit: cover;
+  height: 100%;
+  object-fit: cover;
 }
 .redes-sociais {
 	margin-top: 40px;

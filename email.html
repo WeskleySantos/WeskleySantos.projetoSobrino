@@ -17,114 +17,113 @@
 <body>
 	<div class="container">
 		<!--   Menu   -->
-
 		<div>
 			<nav class="menu">
 				<ul class="lista-principal">
-					<li class=""><a href="index.html" ><i class="fas fa-bed "></i></a>
+					<li>
+						<a href="index.html" ><i class="fas fa-home"></i></a>
 						<ul>
 							<li><a href="index.html">Home</a></li>
 						</ul>
 					</li>
-					
 					<li><a class="verde"><i class="fas fa-users"></i></a>
 						<ul>
-							<li><a href="weskley.html" class="verde">Wesklinho<i class="fas fa-user-astronaut"></i></a></li>
-							<li><a href="juliana.html" class="verde">       Juliana<i class="fas fa-user-nurse"></i></a></li>
+							<li>
+								<a href="weskley.html" class="verde">
+									Wesklinho&nbsp;<i class="fas fa-user-astronaut"></i>
+								</a>
+							</li>
+							<li>
+								<a href="juliana.html" class="verde">
+									<i class="fas fa-user-graduate"></i>&nbsp;Juliana
+								</a>
+							</li>
 						</ul>
 					</li>
-
-					<li class=""><a href="curiosidades.html" class="verde"><i class="fas fa-align-right"></i></a>
+					<li>
+						<a href="curiosidades.html" class="verde">
+							<i class="fas fa-align-right"></i>
+						</a>
 						<ul>
 							<li><a href="curiosidades.html">Curiosidades</a></li>
 						</ul>
 					</li>
-
-					<li><a href="sitesFavoritos.html" class="verde"><i class="fas fa-carrot"></i></a>
-
+					<li>
+						<a href="sitesFavoritos.html" class="verde">
+							<i class="fas fa-bookmark"></i>
+						</a>
 						<ul>
 							<li><a href="sitesFavoritos.html">Sites Favoritos</a></li>
 						</ul>
 					</li>
-					<li><a href="email.html" class="verde selecionado"><i class="material-icons">email</i></a>
-
-						<ul>
-							<li><a href="email.html">Contato</a></li>
-						</ul>
+					<li>
+						<a href="email.html" class="verde">
+							<i class="material-icons">email</i>
+						</a>
+							<ul>
+								<li><a href="email.html">Contato</a></li>
+							</ul>
 					</li>
 				</ul>
 			</nav>
 		</div>
 		<div class="conteudo-esquerda">
 			<!-- Projeto Orientado -->
-				<div class="titulos">
-					<h1 class="titulos">Projeto Orientado</h1>
-					<h2>Contato</h2>
-				</div>
+			<div class="titulos">
+				<h1 class="titulos">Projeto Orientado</h1>
+				<h2>Contato</h2>
+			</div>
 			<!--Conteudo do Site-->
-				<div class="centro">
-					<div class="formulario">
-					<form id="document">				
-						
-							<label>
-								<span>Nome</span><input class="hvr-underline-reveal" required type="text" name="churrasco" id=
-								"churrasco"size="35" placeholder="Nome">
-							</label>
-						
-							<label>
-								<span>Email</span><input type="email" class="left" id="field" name="field" size="20" maxlenght="10" placeholder="E-mail">
-							</label>
-						
-						<label for="review">Seu comentário</label> <small class="caracteres"></small>
-
+			<div class="centro">
+				<div class="formulario">
+					<form id="myForm" method="post" method="">
+						<label>
+							<span>Nome</span><input class="hvr-underline-reveal" required type="text" name="churrasco" id="churrasco" size="35" placeholder="Nome">
+						</label>
+						<label>
+							<span>Email</span><input type="email" class="left" id="field" name="field" size="20" maxlenght="10" placeholder="E-mail">
+						</label>
+						<label for="review">Seu comentário</label>
+						<small class="caracteres"></small>
 						<textarea require name="comentario" id="comentario" cols="30" rows="10" placeholder="Digite sua Mensagem"></textarea>
-
-
-							<button class="hvr-underline-from-left">
-								Enviar
-							</butto>
-				</form>
+						<button class="hvr-underline-from-left">Enviar</button>
+					</form>
 				</div>
-				</div>
-		</div> <!--Menu Esquerda-->
-
- 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
-
-			<script>
-$(document).on("input", "#comentario", function() {
-        var limite = 145;
-        var informativo = "caracteres restantes.";
-        var caracteresDigitados = $(this).val().length;
-        var caracteresRestantes = limite - caracteresDigitados;
-
-        if (caracteresRestantes <= 0) {
-            var comentario = $("textarea[name=comentario]").val();
-            $("textarea[name=comentario]").val(comentario.substr(0, limite));
-            $(".caracteres").text("0 " + informativo);
-        } else {
-            $(".caracteres").text(caracteresRestantes + " " + informativo);
-        }
-    });
-	</script>
-
-	<script>
-// just for the demos, avoids form submit
-jQuery.validator.setDefaults({
-  debug: true,
-  success: "valid"
-});
-$( "#myform" ).validate({
-  rules: {
-    field: {
-      required: true,
-      email: true
-    }
-  }
-});
-</script>
+			</div>
+		</div>
+		<!--Menu Esquerda-->
 	</div> <!--Container-->
-
 </body>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script>
+	$(document).on("input", "#comentario", function() {
+		var limite = 145;
+		var informativo = "caracteres restantes.";
+		var caracteresDigitados = $(this).val().length;
+		var caracteresRestantes = limite - caracteresDigitados;
+		if (caracteresRestantes <= 0) {
+				var comentario = $("textarea[name=comentario]").val();
+				$("textarea[name=comentario]").val(comentario.substr(0, limite));
+				$(".caracteres").text("0 " + informativo);
+		} else {
+				$(".caracteres").text(caracteresRestantes + " " + informativo);
+		}
+	});
+</script>
+<script>
+	jQuery.validator.setDefaults({
+		debug: true,
+		success: "valid"
+	});
+	$( "#myForm" ).validate({
+		rules: {
+			field: {
+				required: true,
+				email: true
+			}
+		}
+	});
+</script>
 </html>
